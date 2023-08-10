@@ -10,12 +10,4 @@ export class HealthService {
   getStatus() {
     return { status: 'OK' };
   }
-
-  getVersion() {
-    return {
-      description: this.packageJson.description,
-      name: this.packageJson.name,
-      version: this.packageJson.version,
-    };
-  }
 }
