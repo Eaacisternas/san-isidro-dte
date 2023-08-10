@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "AbhijoyBasak.nestjs-files",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "firsttris.vscode-jest-runner",
+    "ms-vscode-remote.remote-containers"
+  ]
+}

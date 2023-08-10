@@ -1,0 +1,1 @@
+{"version":3,"file":"versioning.config.js","sourceRoot":"","sources":["../../../../../../src/infrastructure/application/configs/versioning/versioning.config.ts"],"names":[],"mappings":";;;AAAA,2CAAkE;AAE3D,MAAM,gBAAgB,GAAG,CAAC,GAAqB,EAAE,EAAE;IACxD,GAAG,CAAC,gBAAgB,CAAC,EAAE,IAAI,EAAE,uBAAc,CAAC,GAAG,EAAE,cAAc,EAAE,GAAG,EAAE,CAAC,CAAC;AAC1E,CAAC,CAAC;AAFW,QAAA,gBAAgB,oBAE3B"}
