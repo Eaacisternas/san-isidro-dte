@@ -5,7 +5,6 @@ import {
 } from '@infrastructure/application/adapters/database';
 import { DteBody } from './dto/dte.dto';
 import { IGenerateDteBody } from '@domain/dte';
-// import { BranchResponseDto } from './entity/branch.entity';
 import { IDtePort } from '@domain/dte';
 
 @Injectable()
