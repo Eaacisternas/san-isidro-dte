@@ -17,6 +17,7 @@ const openapi = require("@nestjs/swagger");
 const dte_1 = require("../../../domain/dte");
 const common_1 = require("@nestjs/common");
 const dto_1 = require("./dto");
+const swagger_1 = require("@nestjs/swagger");
 let DteController = exports.DteController = class DteController {
     constructor(dteUseCase) {
         this.dteUseCase = dteUseCase;
@@ -43,6 +44,8 @@ let DteController = exports.DteController = class DteController {
 };
 __decorate([
     (0, common_1.Get)('pepareDte'),
+    (0, swagger_1.ApiOperation)({ summary: 'Preparing query to DTE process' }),
+    (0, swagger_1.ApiResponse)({ description: 'Return quantity rows prepare' }),
     openapi.ApiResponse({ status: 200, type: Object }),
     __param(0, (0, common_1.Query)('serviceId')),
     __param(1, (0, common_1.Query)('processId')),
@@ -52,6 +55,8 @@ __decorate([
 ], DteController.prototype, "prepareDte", null);
 __decorate([
     (0, common_1.Get)('accountDetail'),
+    (0, swagger_1.ApiOperation)({ summary: 'process account detail' }),
+    (0, swagger_1.ApiResponse)({ description: 'Return quantity rows afected' }),
     openapi.ApiResponse({ status: 200, type: Object }),
     __param(0, (0, common_1.Query)('serviceId')),
     __param(1, (0, common_1.Query)('processId')),
@@ -61,6 +66,8 @@ __decorate([
 ], DteController.prototype, "accountDetail", null);
 __decorate([
     (0, common_1.Get)('generateDte'),
+    (0, swagger_1.ApiOperation)({ summary: 'generate DTE field' }),
+    (0, swagger_1.ApiResponse)({ description: 'Return quantity rows generate' }),
     openapi.ApiResponse({ status: 200, type: Object }),
     __param(0, (0, common_1.Query)('serviceId')),
     __param(1, (0, common_1.Query)('processId')),
@@ -70,6 +77,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], DteController.prototype, "generateDte", null);
 exports.DteController = DteController = __decorate([
+    (0, swagger_1.ApiTags)('DTE Generation'),
     (0, common_1.Controller)('dte'),
     __metadata("design:paramtypes", [dte_1.DteUseCase])
 ], DteController);

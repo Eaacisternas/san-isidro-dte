@@ -5,9 +5,4 @@ export declare class HealthService {
     getStatus(): {
         status: string;
     };
-    getVersion(): {
-        description: string;
-        name: string;
-        version: string;
-    };
 }

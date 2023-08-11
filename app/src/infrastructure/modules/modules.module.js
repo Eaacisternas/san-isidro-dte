@@ -10,11 +10,12 @@ exports.ModulesModule = void 0;
 const common_1 = require("@nestjs/common");
 const health_1 = require("./health");
 const dte_1 = require("./dte");
+const soap_1 = require("./soap");
 let ModulesModule = exports.ModulesModule = class ModulesModule {
 };
 exports.ModulesModule = ModulesModule = __decorate([
     (0, common_1.Module)({
-        imports: [health_1.HealthModule, dte_1.DteModule],
+        imports: [health_1.HealthModule, dte_1.DteModule, soap_1.SoapModule],
     })
 ], ModulesModule);
 //# sourceMappingURL=modules.module.js.map

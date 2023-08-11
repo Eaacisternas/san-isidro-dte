@@ -22,13 +22,6 @@ let HealthService = exports.HealthService = class HealthService {
     getStatus() {
         return { status: 'OK' };
     }
-    getVersion() {
-        return {
-            description: this.packageJson.description,
-            name: this.packageJson.name,
-            version: this.packageJson.version,
-        };
-    }
 };
 exports.HealthService = HealthService = __decorate([
     (0, common_1.Injectable)(),

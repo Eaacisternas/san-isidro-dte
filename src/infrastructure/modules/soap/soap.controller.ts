@@ -2,7 +2,7 @@ import { SoapUseCase } from '@domain/soap';
 import { Controller, Get, Query } from '@nestjs/common';
 import { SoapBody } from './dto';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-@ApiTags('Procesamiento SOAP')
+@ApiTags('SOAP Consume')
 @Controller('soap')
 export class SoapController {
   constructor(private readonly soapUseCase: SoapUseCase) {}

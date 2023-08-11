@@ -21,9 +21,6 @@ let HealthController = exports.HealthController = class HealthController {
     getStatus() {
         return this.healthsService.getStatus();
     }
-    getVersion() {
-        return this.healthsService.getVersion();
-    }
 };
 __decorate([
     (0, common_1.Get)('health'),
@@ -34,17 +31,8 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], HealthController.prototype, "getStatus", null);
-__decorate([
-    (0, common_1.Get)('version'),
-    (0, swagger_1.ApiOperation)({ summary: 'Version service' }),
-    (0, swagger_1.ApiResponse)({ description: 'Return version' }),
-    openapi.ApiResponse({ status: 200 }),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], HealthController.prototype, "getVersion", null);
 exports.HealthController = HealthController = __decorate([
-    (0, swagger_1.ApiTags)('BFF status'),
+    (0, swagger_1.ApiTags)('Status API'),
     (0, common_1.Controller)(),
     __metadata("design:paramtypes", [health_service_1.HealthService])
 ], HealthController);

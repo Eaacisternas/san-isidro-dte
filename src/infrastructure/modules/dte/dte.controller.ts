@@ -2,7 +2,7 @@ import { DteUseCase } from '@domain/dte';
 import { Controller, Get, Query } from '@nestjs/common';
 import { DteBody, GenerateDteBody } from './dto';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-@ApiTags('Generación DTE')
+@ApiTags('DTE Generation')
 @Controller('dte')
 export class DteController {
   constructor(private readonly dteUseCase: DteUseCase) {}
